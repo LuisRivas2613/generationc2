@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario usuario</title>
+</head>
+<body>
+
+    <script>
+
+var persona = []
+
+        var edad = parseInt(prompt("ingresa tu edad"));
+
+        persona.push(edad)
+
+        if(edad < 18){
+            alert("Es un sitio para +18, no puedes registrarte")
+        } else {
+
+        var nombre = (prompt("ingresa tu nombre"));
+        persona.push(nombre)
+
+        var apellido = (prompt("ingresa tu apellido"));
+        persona.push(apellido)
+
+        var direccion = (prompt("ingresa tu direccon"));
+        persona.push(direccion)
+
+        var correo = (prompt("ingresa tu correo"));
+        persona.push(correo)
+
+        var telefono = parseInt(prompt("ingresa tu numero de telefono"));
+        persona.push(telefono)
+
+        alert("Te registraste exitosamente")
+            console.log(persona)
+            alert(persona)
+            
+           document.write("<em>el nombre es:</em> " + persona[1])
+          <br>
+           document.write("<em>el apellido es:</em> " + persona[2])
+          <br>
+           document.write("<em>la edad es:</em> " + persona[0])
+          <br>
+           document.write("<em>la direccion es:</em> " + persona[3])
+          <br>
+           document.write("<em>el correo  es: </em>" + persona[4])
+          <br>
+          document.write("<em>el telefono  es:</em> " + persona[5])
+
+        }
+    </script>
+
+</body>
+</html>
