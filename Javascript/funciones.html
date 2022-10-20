@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <script>
+
+// Funciones
+// trozo de codigo, que solo se ejecutará cuando sea llamado
+// realiza una accion especifica
+
+
+function nombre_funcion()
+{
+    //accion o codigo a ejecutar
+}
+//llamado a la funcion
+nombre_funcion();
+
+function ejemplo(){
+            console.log("Estoy dentro de la funcion");
+        }
+ejemplo(); 
+console.log("******************************************************************")
+
+console.log("#######Ejercicio con Parametros#########")
+
+function imprimir(cantidad){//dentro de los parentesis se le dicta un parametro.
+                            //cantidad = 3
+        console.log("parametro" ,cantidad)
+}
+imprimir([1,2,3,4])//argumento
+
+console.log("*******************************************************************")
+
+var numero_impar=1;
+
+        function imprimirImpar(impar){
+            console.log("impar",impar);
+            console.log("numero_impar",numero_impar);
+            numero_impar=3;
+        }
+        imprimirImpar(numero_impar);
+        console.log("nuevo numero_impar",numero_impar);
+
+
+        //Retorno
+
+        function sumaNumeros(){
+            console.log(numero_impar+4)
+            return numero_impar+4;
+        
+        
+        }
+            
+        function sumaImpar(){
+            return 3+5;
+
+        }
+        var impares = sumaImpar();
+        console.log("suma impares",impares)
+        console.clear()
+
+        function multiplicacion(numero1,numero2){
+                return numero1*numero2;
+        }
+        var resultadoMultiplicacion = multiplicacion (34,76);
+        console.log("El resultado es", resultadoMultiplicacion);
+        console.clear()
+
+        function crearNuevoArreglo(numero){
+            var arreglo = [];//[0,1,2]
+            for(let i=0; i <= numero;i++){
+                arreglo.push(i);
+            }
+            return arreglo;
+        }
+        var numeroIngresado= parseInt(prompt("ingresa un numero",0));
+        var miArreglo = crearNuevoArreglo(numeroIngresado);
+        console.log("mi arreglo",miArreglo);
+
+
+    </script>
+
+
+
+</body>
+</html>

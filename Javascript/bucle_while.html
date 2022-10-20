@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bucle_while</title>
+</head>
+<body>
+    
+
+<script>
+
+//while
+// mientas sea verdadero se va a repetir
+
+/*
+while(condicion){
+
+}
+*/
+
+/*
+while(true){
+    console.log("soy bacan") // se repite indefinidamente por siempre es verdad
+// while siempre se ejecuta en true, nunca en false
+
+}
+*/
+
+/* 
+while(true){
+        hero.moveRight();
+        hero.moveUp();
+
+}
+
+
+
+*/
+
+
+var contador = 0;// definiendo variable
+while (contador <= 5){// validando, mientras sea verdadero
+        console.log("Somos bacanes los WashiTuring!!"); 
+        contador++;//sumar uno a la variable contador
+}
+console.clear()
+
+//contador = 0 
+
+// diferencia con For, es bueno cuando queramos repetir un ciclo un numero de veces conocido (10,20,30,40)
+// mientras While es infinito hasta que se coloque una condición.
+
+var termino = true;// variable booleana (true o false)
+var contador = 0; 
+//termino , cuando contador sea == 200
+console.log("CONTADOR", contador);
+
+while(termino){
+        
+         contador = contador + 10;
+        console.log("CONTADOR", contador);
+       
+        if(contador==200)// se usa doble igual(==) porque es para comparar, 
+                        // con un igual (=) solo se asigna. 
+            termino = false;
+            //console.log("CONTADOR", contador);
+
+
+}
+
+
+
+
+
+
+</script>
+</body>
+</html>
